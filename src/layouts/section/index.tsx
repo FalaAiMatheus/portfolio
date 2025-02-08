@@ -1,10 +1,11 @@
 import { cn } from '@/lib/utils'
 import { Slot } from '@radix-ui/react-slot'
 
-type SectionProps = React.PropsWithChildren<{ className?: string }>
-export const Section = ({ children, className }: SectionProps) => {
+type SectionProps = React.PropsWithChildren<{ className?: string; id?: string }>
+export const Section = ({ children, className, id }: SectionProps) => {
   return (
     <section
+      id={id}
       className={cn(
         'mx-auto flex w-full items-center justify-center p-4',
         className
