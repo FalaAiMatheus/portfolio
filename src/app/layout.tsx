@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@/contexts/theme'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { Geist_Mono as geistMono } from 'next/font/google'
@@ -24,7 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={cn(font.className, 'antialiased')}>{children}</body>
+      <body className={cn(font.className, 'antialiased')}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
