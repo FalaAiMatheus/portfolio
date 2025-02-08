@@ -1,7 +1,9 @@
+import { Header } from '@/layouts/header'
+
 export default function Home() {
   return (
-    <main>
-      <div>Hello world!</div>
+    <main className="space-y-10">
+      <Header />
     </main>
-  );
+  )
 }
