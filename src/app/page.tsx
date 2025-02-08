@@ -1,9 +1,11 @@
+import { WelcomePage } from '@/features/welcome/components/welcome-section'
 import { Header } from '@/layouts/header'
 
 export default function Home() {
   return (
-    <main className="space-y-10">
+    <main>
       <Header />
+      <WelcomePage />
     </main>
   )
 }
