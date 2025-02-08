@@ -14,7 +14,7 @@ export const WelcomePage = () => {
             Bem vindo(a) ao meu portfólio
           </span>
         </div>
-        <Link className="absolute bottom-2 self-center" href="#content">
+        <Link className="absolute bottom-2 self-center" href="#about">
           <div className="flex cursor-pointer flex-col items-center gap-2 rounded-lg p-4 text-center">
             <span>Clique aqui para ver mais!</span>
             <ChevronDown size={32} />
