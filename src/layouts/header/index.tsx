@@ -3,7 +3,7 @@ import { Section } from '../section'
 
 export const Header = () => {
   return (
-    <Section>
+    <Section className="fixed top-0">
       <Section.Container className="justify-end" asChild>
         <header>
           <nav>
