@@ -1,5 +1,6 @@
 import { SectionLinks } from '@/features/sections-links/components/links'
 import { Section } from '@/layouts/section'
+import { Button } from '@/ui/button'
 import { TechBadge } from '@/ui/tech-badge'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -89,7 +90,22 @@ export const About = () => {
               </div>
             ))}
           </div>
-          <SectionLinks />
+          <SectionLinks>
+            <h2 className="text-lg font-medium lg:text-xl xl:text-2xl">
+              Check more
+            </h2>
+            <div className="flex w-full gap-2">
+              <Button variant="outline" asChild>
+                <Link href="#experiences">Experiences</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="#projects">Projects</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link href="#contact">Contact</Link>
+              </Button>
+            </div>
+          </SectionLinks>
         </div>
         <div className="relative h-[500px] w-[500px] max-[925px]:h-52 max-[925px]:w-52">
           <Image
