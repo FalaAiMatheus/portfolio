@@ -91,6 +91,9 @@ export const Experiences = () => {
           </h2>
           <div className="flex w-full gap-2">
             <Button variant="outline" asChild>
+              <Link href="#about">About</Link>
+            </Button>
+            <Button variant="outline" asChild>
               <Link href="#projects">Projects</Link>
             </Button>
             <Button variant="outline" asChild>
