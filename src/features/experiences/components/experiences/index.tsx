@@ -51,7 +51,7 @@ export const Experiences = () => {
               desktop, monitoramento e correção de eventuais bugs e falhas que
               possam ocorrer em plataformas internas.
             </span>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <Badge>NextJs</Badge>
               <Badge>Typescript</Badge>
               <Badge>Tailwind</Badge>
@@ -77,7 +77,7 @@ export const Experiences = () => {
                 year: 'numeric',
               }
             )} - ${timeInFunctionApprentice}`}</span>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <Badge>HTML</Badge>
               <Badge>CSS</Badge>
               <Badge>JavaScript</Badge>
@@ -89,7 +89,7 @@ export const Experiences = () => {
           <h2 className="text-lg font-medium lg:text-xl xl:text-2xl">
             Check more
           </h2>
-          <div className="flex w-full gap-2">
+          <div className="flex w-full flex-wrap gap-2">
             <Button variant="outline" asChild>
               <Link href="#about">About</Link>
             </Button>

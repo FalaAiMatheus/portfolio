@@ -39,7 +39,7 @@ export const Projects = () => {
           <h2 className="text-lg font-medium lg:text-xl xl:text-2xl">
             Check more
           </h2>
-          <div className="flex w-full gap-2">
+          <div className="flex w-full flex-wrap gap-2">
             <Button variant="outline" asChild>
               <Link href="#experiences">Experiences</Link>
             </Button>
