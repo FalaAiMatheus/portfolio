@@ -1,5 +1,5 @@
-import { ToggleTheme } from '@/features/theme/components/toggle-theme'
-import { Section } from '../section'
+import { ToggleTheme } from '@/components/ui/toggle-theme';
+import { Section } from '../section';
 
 export const Header = () => {
   return (
@@ -16,5 +16,5 @@ export const Header = () => {
         </header>
       </Section.Container>
     </Section>
-  )
-}
+  );
+};

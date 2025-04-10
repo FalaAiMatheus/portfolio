@@ -1,12 +1,12 @@
-import { ThemeProvider } from '@/contexts/theme'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { ThemeProvider } from '@/contexts/theme';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-})
+});
 
 export const metadata: Metadata = {
   title: 'FalaAiMatheus - Portfolio',
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://falaaimatheus.vercel.app/',
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${inter.variable}`}>
+    <html className="scroll-smooth" lang="pt-BR" suppressHydrationWarning>
+      <body className={`${inter.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -46,5 +46,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
