@@ -1,10 +1,10 @@
-import { projects } from '@/core/constants/projects'
+import { projects } from '@/core/constants/projects';
 
-import { SectionLinks } from '@/components/features/sections-links/components/links'
-import { Section } from '@/components/layouts/section'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import Link from 'next/link'
+import { SectionLinks } from '@/components/features/sections-links/components/links';
+import { Section } from '@/components/layouts/section';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import Link from 'next/link';
 
 export const Projects = () => {
   return (
@@ -52,5 +52,5 @@ export const Projects = () => {
         </SectionLinks>
       </Section.Container>
     </Section>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
-import { Section } from '@/components/layouts/section'
-import { ChevronDown } from 'lucide-react'
-import Link from 'next/link'
+import { Section } from '@/components/layouts/section';
+import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 export const WelcomePage = () => {
   return (
@@ -22,5 +22,5 @@ export const WelcomePage = () => {
         </Link>
       </Section.Container>
     </Section>
-  )
-}
+  );
+};

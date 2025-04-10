@@ -1,15 +1,12 @@
-
-import { SectionLinks } from '@/components/features/sections-links/components/links'
-import { Section } from '@/components/layouts/section'
-import { Button } from '@/components/ui/button'
-import { TechBadge } from '@/components/ui/tech-badge'
-import { techStack } from '@/core/constants/tech-stack'
-import Image from 'next/image'
-import Link from 'next/link'
-
+import { SectionLinks } from '@/components/features/sections-links/components/links';
+import { Section } from '@/components/layouts/section';
+import { Button } from '@/components/ui/button';
+import { TechBadge } from '@/components/ui/tech-badge';
+import { techStack } from '@/core/constants/tech-stack';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const About = () => {
-
   return (
     <Section className="min-h-screen" id="about">
       <Section.Container className="flex-row justify-between gap-2 max-[925px]:flex-col-reverse">
@@ -17,7 +14,7 @@ export const About = () => {
           <h1 className="text-lg font-medium lg:text-2xl xl:text-4xl">
             Matheus França
           </h1>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-muted-foreground text-sm">
             Full Stack Developer | Front End Developer at{' '}
             <Link
               className="transition-all hover:text-sky-700 hover:underline"
@@ -85,5 +82,5 @@ export const About = () => {
         </div>
       </Section.Container>
     </Section>
-  )
-}
+  );
+};

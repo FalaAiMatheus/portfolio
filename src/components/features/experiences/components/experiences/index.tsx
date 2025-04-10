@@ -1,26 +1,26 @@
-import { dates } from '@/core/constants/job'
+import { dates } from '@/core/constants/job';
 
-import { SectionLinks } from '@/components/features/sections-links/components/links'
-import { Section } from '@/components/layouts/section'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
-import { useExperience } from '../../hooks/experience'
+import { SectionLinks } from '@/components/features/sections-links/components/links';
+import { Section } from '@/components/layouts/section';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { useExperience } from '../../hooks/experience';
 
 export const Experiences = () => {
-  const { calcDifferenceOfDates } = useExperience()
+  const { calcDifferenceOfDates } = useExperience();
   const timeInFunctionFrontEnd = calcDifferenceOfDates(
     dates.INIT_FUNCTION_FRONT_END,
     dates.CURRENT_DATE
-  )
+  );
   const timeInFunctionApprentice = calcDifferenceOfDates(
     dates.INIT_FUNCTION_APPRENTICE,
     dates.END_FUNCTION_APPRENTICE
-  )
+  );
   const timeInTheCompany = calcDifferenceOfDates(
     dates.INIT_JOB,
     dates.CURRENT_DATE
-  )
+  );
 
   return (
     <Section className="min-h-screen" id="experiences">
@@ -28,19 +28,19 @@ export const Experiences = () => {
         <h2 className="text-lg font-medium lg:text-2xl xl:text-4xl">
           Experiences
         </h2>
-        <div className="flex h-auto w-full flex-col gap-2 rounded-md border bg-secondary p-4">
+        <div className="bg-secondary flex h-auto w-full flex-col gap-2 rounded-md border p-4">
           <div className="flex flex-col gap-1">
             <div className="flex flex-col gap-1">
               <span className="text-lg font-medium">
                 Grupo de Comunicação O POVO
               </span>
               <span className="text-sm">{timeInTheCompany}</span>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-muted-foreground text-sm">
                 Fortaleza, Ceará, Brasil
               </span>
               <span className="font-medium">Desenvolvedor Front End I</span>
             </div>
-            <span className="text-sm text-muted-foreground">{`${new Date(
+            <span className="text-muted-foreground text-sm">{`${new Date(
               dates.INIT_FUNCTION_FRONT_END
             ).toLocaleDateString('pt-BR', {
               timeZone: 'UTC',
@@ -64,7 +64,7 @@ export const Experiences = () => {
             <div className="flex flex-col gap-1">
               <span className="font-medium">Aprendiz Front End</span>
             </div>
-            <span className="text-sm text-muted-foreground">{`${new Date(
+            <span className="text-muted-foreground text-sm">{`${new Date(
               dates.INIT_FUNCTION_APPRENTICE
             ).toLocaleDateString('pt-BR', {
               timeZone: 'UTC',
@@ -104,5 +104,5 @@ export const Experiences = () => {
         </SectionLinks>
       </Section.Container>
     </Section>
-  )
-}
+  );
+};

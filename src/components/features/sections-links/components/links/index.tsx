@@ -1,4 +1,4 @@
-import { Section } from '@/components/layouts/section'
+import { Section } from '@/components/layouts/section';
 
 export const SectionLinks = ({ children }: React.PropsWithChildren) => {
   return (
@@ -7,5 +7,5 @@ export const SectionLinks = ({ children }: React.PropsWithChildren) => {
         {children}
       </Section.Container>
     </Section>
-  )
-}
+  );
+};

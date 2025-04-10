@@ -4,17 +4,17 @@ export function useExperience() {
     currentDate: string
   ): string => {
     const years =
-      new Date(currentDate).getFullYear() - new Date(initDate).getFullYear()
+      new Date(currentDate).getFullYear() - new Date(initDate).getFullYear();
     const months =
       new Date(currentDate).getUTCMonth() +
       1 -
       new Date(initDate).getUTCMonth() +
-      1
+      1;
 
-    return `${years}a ${months}m`
-  }
+    return `${years}a ${months}m`;
+  };
 
   return {
     calcDifferenceOfDates,
-  }
+  };
 }

@@ -1,7 +1,10 @@
-import { cn } from '@/lib/utils'
-import { Slot } from '@radix-ui/react-slot'
+import { cn } from '@/lib/utils';
+import { Slot } from '@radix-ui/react-slot';
 
-type SectionProps = React.PropsWithChildren<{ className?: string; id?: string }>
+type SectionProps = React.PropsWithChildren<{
+  className?: string;
+  id?: string;
+}>;
 export const Section = ({ children, className, id }: SectionProps) => {
   return (
     <section
@@ -13,19 +16,19 @@ export const Section = ({ children, className, id }: SectionProps) => {
     >
       {children}
     </section>
-  )
-}
+  );
+};
 
 type ContainerProps = React.PropsWithChildren<{
-  className?: string
-  asChild?: boolean
-}>
+  className?: string;
+  asChild?: boolean;
+}>;
 const Container = ({
   children,
   className,
   asChild = false,
 }: ContainerProps) => {
-  const Component = asChild ? Slot : 'div'
+  const Component = asChild ? Slot : 'div';
   return (
     <Component
       className={cn(
@@ -35,7 +38,7 @@ const Container = ({
     >
       {children}
     </Component>
-  )
-}
+  );
+};
 
-Section.Container = Container
+Section.Container = Container;
