@@ -1,7 +1,7 @@
 interface ProjectsType {
-  url: string
-  name: string
-  description?: string
+  url: string;
+  name: string;
+  description?: string;
 }
 
 export const projects: ProjectsType[] = [
@@ -33,4 +33,4 @@ export const projects: ProjectsType[] = [
     url: 'https://github.com/FalaAiMatheus/meetup-supabase',
     name: 'Meetup Supabase',
   },
-]
+];
