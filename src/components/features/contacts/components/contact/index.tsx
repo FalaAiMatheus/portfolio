@@ -1,4 +1,4 @@
-import { Section } from '@/layouts/section'
+import { Section } from '@/components/layouts/section'
 import { Mail } from 'lucide-react'
 import Link from 'next/link'
 

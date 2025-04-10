@@ -1,9 +1,9 @@
 import { projects } from '@/core/constants/projects'
-import { SectionLinks } from '@/features/sections-links/components/links'
-import { Section } from '@/layouts/section'
-import { Button } from '@/ui/button'
-import { Card } from '@/ui/card'
-import { GithubIcon } from 'lucide-react'
+
+import { SectionLinks } from '@/components/features/sections-links/components/links'
+import { Section } from '@/components/layouts/section'
+import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
 import Link from 'next/link'
 
 export const Projects = () => {
@@ -27,7 +27,6 @@ export const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <GithubIcon />
                     <span>Repositório</span>
                   </Link>
                 </Button>

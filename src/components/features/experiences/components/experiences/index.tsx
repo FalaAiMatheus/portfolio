@@ -1,8 +1,9 @@
 import { dates } from '@/core/constants/job'
-import { SectionLinks } from '@/features/sections-links/components/links'
-import { Section } from '@/layouts/section'
-import { Badge } from '@/ui/badge'
-import { Button } from '@/ui/button'
+
+import { SectionLinks } from '@/components/features/sections-links/components/links'
+import { Section } from '@/components/layouts/section'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { useExperience } from '../../hooks/experience'
 

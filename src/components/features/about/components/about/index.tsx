@@ -1,47 +1,15 @@
-import { SectionLinks } from '@/features/sections-links/components/links'
-import { Section } from '@/layouts/section'
-import { Button } from '@/ui/button'
-import { TechBadge } from '@/ui/tech-badge'
+
+import { SectionLinks } from '@/components/features/sections-links/components/links'
+import { Section } from '@/components/layouts/section'
+import { Button } from '@/components/ui/button'
+import { TechBadge } from '@/components/ui/tech-badge'
+import { techStack } from '@/core/constants/tech-stack'
 import Image from 'next/image'
 import Link from 'next/link'
 
-interface TechStackType {
-  image: string
-  name: string
-}
+
 export const About = () => {
-  const techStack: TechStackType[] = [
-    {
-      image:
-        'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg',
-      name: 'NodeJs',
-    },
-    {
-      image:
-        'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NestJS-Dark.svg',
-      name: 'NestJS',
-    },
-    {
-      image:
-        'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg',
-      name: 'Typescript',
-    },
-    {
-      image:
-        'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NextJS-Dark.svg',
-      name: 'NextJS',
-    },
-    {
-      image:
-        'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg',
-      name: 'Javascript',
-    },
-    {
-      image:
-        'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg',
-      name: 'React',
-    },
-  ]
+
   return (
     <Section className="min-h-screen" id="about">
       <Section.Container className="flex-row justify-between gap-2 max-[925px]:flex-col-reverse">

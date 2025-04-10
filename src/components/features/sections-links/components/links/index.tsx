@@ -1,4 +1,4 @@
-import { Section } from '@/layouts/section'
+import { Section } from '@/components/layouts/section'
 
 export const SectionLinks = ({ children }: React.PropsWithChildren) => {
   return (

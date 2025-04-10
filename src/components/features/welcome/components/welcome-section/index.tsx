@@ -1,4 +1,4 @@
-import { Section } from '@/layouts/section'
+import { Section } from '@/components/layouts/section'
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 

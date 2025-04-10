@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@/ui/button'
-import { DropdownMenu } from '@/ui/dropdown-menu'
+import { Button } from '@/components/ui/button'
+import { DropdownMenu } from '@/components/ui/dropdown-menu'
 import { Laptop, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 
