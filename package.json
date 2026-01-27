@@ -7,7 +7,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint"
+        "lint": "eslint",
+        "lint:fix": "eslint \"**/*.{ts,jsx,tsx}\" --fix",
+        "format": "prettier --write \"**/*.{ts,jsx,tsx}\" --cache"
     },
     "dependencies": {
         "class-variance-authority": "^0.7.1",
