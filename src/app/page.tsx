@@ -1,7 +1,11 @@
+import { Header } from '~/components/header';
+import { HeroSection } from '~/components/hero';
+
 export default function Home() {
   return (
     <main>
-      <div>Hello world!</div>
+      <Header />
+      <HeroSection />
     </main>
   );
 }
