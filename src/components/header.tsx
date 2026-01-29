@@ -12,6 +12,7 @@ export const Header = () => {
             <div>
               <Link
                 href="https://github.com/FalaAiMatheus"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub

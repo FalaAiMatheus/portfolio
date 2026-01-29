@@ -7,7 +7,9 @@ export const HeroSection = () => {
         </h1>
         <div>
           <div className="text-muted-foreground flex flex-wrap items-center justify-center gap-1 text-center text-xl">
-            <span>Full Stack Developer</span>
+            <span className="animate-gradient-x animate-pulse bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400 bg-[length:200%_auto] bg-clip-text text-transparent">
+              Full Stack Developer
+            </span>
             <span>•</span>
             <span>Palestrante</span>
             <span>•</span>
