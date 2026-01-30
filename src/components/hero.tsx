@@ -44,11 +44,7 @@ export const HeroSection = () => {
               <Linkedin />
             </Link>
           </Button>
-          <Button
-            asChild
-            variant="outline"
-            size="icon-lg"
-          >
+          <Button asChild variant="outline" size="icon-lg">
             <Link
               href="mailto:falaaimatheus.dev@gmail.com"
               target="_blank"
