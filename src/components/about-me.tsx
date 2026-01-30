@@ -15,7 +15,8 @@ export const AboutMeSection = () => {
           participei de alguns projetos sendo um deles o desenvolvimento do
           portal do trabalhe conosco do Grupo de Comunicação O POVO, o
           desenvolvimento do site do Front End Day, principal evento de
-          tecnologia da comunidade do Front End CE.
+          tecnologia da comunidade do Front End CE. Entre outros projetos
+          internos do Grupo de Comunicação O POVO.
         </p>
       </div>
     </section>
