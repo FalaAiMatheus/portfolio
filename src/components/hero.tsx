@@ -1,3 +1,7 @@
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { Button } from './ui/button';
+import Link from 'next/link';
+
 export const HeroSection = () => {
   return (
     <section className="flex h-[80vh] w-full items-center justify-center p-4">
@@ -15,6 +19,44 @@ export const HeroSection = () => {
             <span>•</span>
             <span>Organizador</span>
           </div>
+        </div>
+        <div className="mt-6 flex items-center gap-4">
+          <Button asChild variant="outline" size="icon-lg">
+            <Link
+              href="https://github.com/FalaAiMatheus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github />
+            </Link>
+          </Button>
+          <Button
+            className="!bg-linear-to-r from-cyan-500 to-blue-500"
+            asChild
+            variant="outline"
+            size="icon-lg"
+          >
+            <Link
+              href="https://www.linkedin.com/in/matheussfranca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin />
+            </Link>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            size="icon-lg"
+          >
+            <Link
+              href="mailto:falaaimatheus.dev@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
