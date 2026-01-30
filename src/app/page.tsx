@@ -22,7 +22,7 @@ export default function Home() {
             animationName: 'pulse',
             animationIterationCount: 'infinite',
           }}
-        />{' '}
+        />
       </div>
     </main>
   );
