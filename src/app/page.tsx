@@ -1,9 +1,10 @@
+import { AboutMeSection } from '~/components/about-me';
 import { Header } from '~/components/header';
 import { HeroSection } from '~/components/hero';
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative min-h-screen w-full overflow-x-hidden">
       <div className="fixed inset-0 -z-10 overflow-hidden bg-white transition-colors duration-500 dark:bg-black">
         <div
           className="absolute top-[-10%] left-[-15%] h-[70vw] w-[70vw] animate-pulse rounded-full opacity-30 blur-[80px] md:top-[-15%] md:left-[-10%] md:h-[600px] md:w-[600px] md:blur-[120px] dark:opacity-20"
@@ -12,8 +13,6 @@ export default function Home() {
             animationDuration: '8s',
           }}
         />
-        <Header />
-        <HeroSection />
         <div
           className="absolute right-[-10%] bottom-[-5%] h-[60vw] w-[60vw] rounded-full opacity-20 blur-[60px] md:right-[-5%] md:bottom-[-10%] md:h-[500px] md:w-[500px] md:blur-[100px] dark:opacity-10"
           style={{
@@ -23,6 +22,11 @@ export default function Home() {
             animationIterationCount: 'infinite',
           }}
         />
+      </div>
+      <div className="relative z-10">
+        <Header />
+        <HeroSection />
+        <AboutMeSection />
       </div>
     </main>
   );
