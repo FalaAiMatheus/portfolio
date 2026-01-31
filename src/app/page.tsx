@@ -1,6 +1,7 @@
 import { AboutMeSection } from '~/components/about-me';
 import { Header } from '~/components/header';
 import { HeroSection } from '~/components/hero';
+import { ProjectsSection } from '~/components/projects';
 import { TechStackSection } from '~/components/tech-stack';
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <HeroSection />
         <AboutMeSection />
         <TechStackSection />
+        <ProjectsSection />
       </div>
     </main>
   );
