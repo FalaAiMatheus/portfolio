@@ -1,6 +1,7 @@
 import { AboutMeSection } from '~/components/about-me';
 import { Header } from '~/components/header';
 import { HeroSection } from '~/components/hero';
+import { TechStackSection } from '~/components/tech-stack';
 
 export default function Home() {
   return (
@@ -23,10 +24,11 @@ export default function Home() {
           }}
         />
       </div>
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col items-center gap-6">
         <Header />
         <HeroSection />
         <AboutMeSection />
+        <TechStackSection />
       </div>
     </main>
   );
