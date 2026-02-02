@@ -35,6 +35,7 @@ export default defineConfig([
       ...eslintPluginReact.configs['jsx-runtime'].rules,
       ...eslintPluginReactHooks.configs.recommended.rules,
       'no-undef': 'off',
+      'no-unused-vars': 'off',
       '@typescript-eslint/array-type': 'off',
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/consistent-type-imports': [
